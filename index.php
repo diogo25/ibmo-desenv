@@ -20,11 +20,7 @@
 				</div>
 				<div class="Box">
 					<h2>DESTAQUE</h2>
-					<?php query_posts('showposts=1&cat=17');?>
-				        <?php if (have_posts()): while (have_posts()) : the_post();?>
-                        	<? the_content(); ?>
-                        <?php endwhile; else:?>
-						<?php endif;?>
+					<iframe width="100%" height="290" src="http://www.youtube.com/embed/Fi3fDf7K2dc" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="SideBar">
 					<ul>
@@ -36,7 +32,7 @@
 							);
 							$my_query = new WP_Query( $args );
 						?>
-            			<?php query_posts('showposts=3&cat=16');?>
+            			<?php query_posts('showposts=3');?>
 				        <?php if (have_posts()): while (have_posts()) : the_post();?>
 						<li>
 							<H3><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?>
@@ -52,56 +48,32 @@
 				</div>				
 			</div>
 			
-            <?php query_posts('showposts=1&cat=12');?>
-        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+            <?php query_posts('showposts=1&cat=9');?>
+        <?php if (have_posts()): while (have_posts()) : the_post(); ?>        
 			<div class="Box2">
-            
-            
-            
-            				<?php
-					$key="feature";					
-					$caminhoimg = get_post_meta($post->ID,$key,true);
-                    $title = get_the_title();
-					$alt= get_the_title();
-					$width="312px";
-					$height="170px";
-					$termimg='/>';
-					if(get_post_meta($post->ID,$key,true))
-					{
-					echo '<div class="Bx-img"> <img src="'.$caminhoimg.'" title="'.$title.'" alt="'.$alt.'"'.'widht="'.$width.'" height="'.$height.'"'.$termimg.'</div>';
-					}else{
-						}
-				?>
-                
-				<span><h3><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></h3></span>
-					<p><?php the_excerpt_rereloaded(30);?></p>
+            <span><h3>Ultimo post >> <?php $category = get_the_category(); echo $category[0]-> cat_name; ?></h3></span>
+            <?php if (has_post_thumbnail( $post->ID ) ): ?>
+			<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+            <div class="Bx-img"><img width="312px;" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" /></div>
+            <?php endif; ?>                 
+				<span><h3><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></a></h3></span>
+					<p><?php the_excerpt_rereloaded(60);?></p>
 				</div>
                 <?php endwhile; else:?>
 			 <?php endif;?>	
 				
-            <?php query_posts('showposts=1&cat=14');?>
+            <?php query_posts('showposts=1&cat=10');?>
         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<div class="Box2">
             
+            <span><h3>Ultimo post >> <?php $category = get_the_category(); echo $category[0]-> cat_name; ?></h3></span>
             
-            
-            				<?php
-					$key="feature";					
-					$caminhoimg = get_post_meta($post->ID,$key,true);
-                    $title = get_the_title();
-					$alt= get_the_title();
-					$width="312px";
-					$height="170px";
-					$termimg='/>';
-					if(get_post_meta($post->ID,$key,true))
-					{
-					echo '<div class="Bx-img"> <img src="'.$caminhoimg.'" title="'.$title.'" alt="'.$alt.'"'.'widht="'.$width.'" height="'.$height.'"'.$termimg.'</div>';
-					}else{
-						}
-				?>
-                
-				<span><h3><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></h3></span>
-					<p><?php the_excerpt_rereloaded(30);?></p>
+            <?php if (has_post_thumbnail( $post->ID ) ): ?>
+			<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+            <div class="Bx-img"><img width="312px;" src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" /></div>
+            <?php endif; ?>                             
+				<span><h3><a href="<?php the_Permalink()?>" title="<?php the_title();?>" alt="<?php the_title();?>"><?php the_title();?></a></h3></span>
+					<p><?php the_excerpt_rereloaded(60);?></p>
 				</div>
                 <?php endwhile; else:?>
 			 <?php endif;?>	
