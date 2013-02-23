@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+fieldset, form, label, legend,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h3,h4{font-family:  "nothing_you_could_doregular";}
+
+@font-face {
+    font-family: 'nothing_you_could_doregular';
+    src: url('font/nothingyoucoulddo-webfont.eot');
+    src: url('font/nothingyoucoulddo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nothingyoucoulddo-webfont.woff') format('woff'),
+         url('font/nothingyoucoulddo-webfont.ttf') format('truetype'),
+         url('font/nothingyoucoulddo-webfont.svg#nothing_you_could_doregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'abelregular';
+    src: url('font/abel-regular-webfont.eot');
+    src: url('font/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/abel-regular-webfont.woff') format('woff'),
+         url('font/abel-regular-webfont.ttf') format('truetype'),
+         url('font/abel-regular-webfont.svg#abelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#TopHeader{max-width: 960px;margin:auto;width: 96%;border-bottom:1px solid #006683;height: 50px;padding: 1%;}
+#Header{max-width: 960px;max-height:150px;height:50px;margin:0 auto;width: 96%;padding:1%;border-bottom:1px solid #006683;}
+#Banner{max-width: 960px;margin:auto;width: 94%;padding: 3% 3% 0;}
+#Content{max-width: 960px;margin: 50px auto 100px;width: 96%;padding-bottom: 25px;overflow: hidden;}
+#Footer{height: 70px;width: 100%; margin-top: 150px; clear: both;padding-top: 59px;background:#006683; }
+
+
+#TopHeader h1{width: 80px;float: left;}
+#TopHeader ul li{display: inline;}
+#TopHeader ul {float: right;}
+
+.Menu{margin-top: 20px;}
+.Menu ul li{display: inline;font-family: "nothing_you_could_doregular";font-weight: bold;font-size: 15px;}
+.Menu ul li a{color:#006683;text-decoration: none;padding: 6px}
+.Menu ul li a:hover{color:#ffffff;text-decoration: none;background: #006683;}
+
+.BoxBanner{width: 100%;}
+.BoxBanner img{width: 100%;}
+
+.Event{max-width: 960px;margin:auto;width: 96%;}
+
+.ShapeEvent{background:#006683;height: 50px;}
+.ShapeEvent{font-family:  "nothing_you_could_doregular";color: #fff;}
+.ShapeEvent ul li{display: inline;font-size: 11px;}
+.ShapeEvent ul li a{color: #fff; text-decoration: none;}
+.ShapeEvent h2{font-family:  "nothing_you_could_doregular";color: #fff;float: left;padding: 17px;}
+.ShapeEvent .Page{float: right;padding: 17px;}
+
+.Event .Box1 { margin-top: 15px; width: 25%;  margin-left: 10px; float: left;border-top: 1px solid #006683;}
+.Event .Box1 h2{ background: #006683;padding: 1px;display: inline-block;margin-bottom: 10px;font-family: "abelregular";color: #ffffff;font-size: 16px;}
+
+.Box { margin-top: 15px; width: 370px;  margin-left: 10px; float: left;border-top: 1px solid #006683;height: 100%}
+/*.Box iframe{width: 100%;height:290px;}*/
+.Box h2{ background: #006683;padding: 1px;display: inline-block;margin-bottom: 10px;font-family: "abelregular";color: #ffffff;font-size: 16px;}
+
+.Event .SideBar{ margin-top: 15px; margin-left: 10px; width: 30%; padding: 1px;display: inline-block;border: 1px solid #006683;font-family:  "nothing_you_could_doregular";}
+.Event .SideBar h2{ color: #006683;padding: 20px;font-size: 15px;}
+.Event .SideBar h3{ background: #006683;font-size: 12px;color:#ffffff;display: inline-block;}
+.Event .SideBar h3 a{ padding: 5px;font-size: 12px;color:#ffffff;display: inline-block;text-decoration: none;}
+.Event .SideBar h3 a:hover{ background: #ffffff;color:#006683;border: 1px solid #006683;padding: 4px;}
+.Event .SideBar p{ color: #006683;padding: 6px;font-size: 12px;}
+.Event .SideBar ul li{ border-top: 1px solid #006683;width: 96%;}
+.Event .SideBar ul { padding: 5px;}
+
+#Content .Box2{width: 96%;margin-top: 20px;overflow: hidden;padding-top: 20px;}
+.Box2 a{text-decoration: none;color:#006683;}
+.Box2 .Bx-img{float: left;border: 1px solid #006683;position: relative;margin-right: 15px;height: auto;width:auto;margin-top:25px;}
+.Box2 .Bx-img .Date{position: absolute;top: 0;background: url(../img/bg-destaques.png);height: 93px;right: 0;width: 77px}
+.Box2 .Bx-img .Date p{font-family: "abelregular";color: #ffffff;font-size: 13px;text-align: right;margin-top: 5px;padding: 0}
+.Box2 ul{ margin-left: 15px;overflow: hidden;}
+.Box2 span{border-top: 1px solid #006683;display: block;overflow: hidden;margin-top:25px;}
+.Box2 h3{ background: #006683;padding: 10px;font-size: 12px;color:#ffffff;display: inline-block;}
+.Box2 h3 a{ color:#ffffff;text-decoration: none;padding: 5px 10px;}
+.Box2 h3 a:hover{ color:#006683;text-decoration: none;}
+.Box2 h3:hover{ color:#006683; background: #ffffff;border: 1px solid #006683;padding: 9px;}
+.Box2 p{ padding: 10px;font-size: 12px;color:#006683;font-family: "abelregular";font-size: 16px;overflow: hidden;}
+
+
+.slides_container {width:100%;height:270px;}
+.slides_container li img{width:100%;max-width: 960px;height:270px;  /*display:block;*/ }
+.prev{float: right;position: relative;right: 90px;margin-top: 10px;text-decoration: none;color: #006683;font-family: "nothing_you_could_doregular";}
+.next{float: right;margin-top: 10px;text-decoration: none;color: #006683;font-family: "nothing_you_could_doregular";}
+.pagination{display: none;}
+
+/*pastoral*/
+
+.Box2 .Title h3:hover{background: #006683 !important;color: #FFFFFF;border-bottom: 1px solid #006683;border-left: none;border-right: none;}
+.Box2 .Title h3{font-size: 20px;padding-right: 10px;padding-left: 5px;}
+#BannerPastor{margin: 80px auto;width: 100%;max-width: 450px;padding: 3% 3% 0;}
+
+
+#BannerPastor .slides_container li img{width:100%;height:270px; }
+#BannerPastor .slides_container {width:100%;height:270px;}
+#BannerPastor .prev{display: none;}
+#BannerPastor .next{display: none;}
+.pagination{display: none;}
+
+
+/*multimidia*/
+
+.Featured {width: 500px;margin: 10px 0 50px;}
+.Featured .Box{float: none;width: 770px;height: auto;overflow: hidden;margin-left: 0;}
+.Featured .Box img{border: 1px solid #006683;clear: both;display: block;padding: 2px;float: left;}
+.Featured .Box h3{color: #006683;margin: 10px 0;}
+.Featured .Box h3 a{color: #006683;text-decoration: none}
+.Featured .Box p{color: #006683;font-family: "abelregular";font-size: 16px;overflow: hidden;padding: 0 10px;}
+
+
+.Box2 .Bx-img img{padding:2px 2px 0;}
+.Publisher .Bx-img1{display: none;}
+.Publisher .Box2 .Title1{margin-left: 0}
+
+/*eventos*/
+.Event .Box1{font-family: "abelregular";overflow: hidden;}
+.Column{clear: both;font-family: "abelregular";overflow: hidden;}
+.Column .Pillar01 a:hover{border-bottom: 2px solid #006683;padding: 5px 0 3px}
+.Column .Pillar02 a:hover{border-bottom: 2px solid #006683;padding: 5px 0 3px}
+.Pillar01 ul li{overflow: hidden;}
+.Pillar01{float: left;}
+.Pillar01 a{padding: 5px 0;display: inline-block;text-decoration: none;color:#006683;}
+.Pillar02 a{padding: 5px 0;display: inline-block;text-decoration: none;color:#006683;}
+.Pillar02{float: right;margin-right: 10px;}
+.Years{clear: both;margin-top: 10px;overflow: hidden;font-family: "nothing_you_could_doregular";font-size: 12px;}
+.Year{float: right;margin-right: 10px;}
+.PreviousYear{float: right;}
+.Years a{color:#006683;padding: 5px;text-decoration: none;}
+/*sigle-evento*/
+#Content .Event .Box2{width: 96%;margin-top: 20px;overflow: hidden;padding-bottom: 100px;}
+.Event .Box2 span{margin-left: 0;margin-bottom: 20px;}
+.Event .Box2 p{overflow: visible;padding: 0}
+.EventTitle .Box2 h3:hover{background: none repeat scroll 0 0 #006683 !important;border-bottom: 1px solid #006683;border-left: medium none;border-right: medium none;color: #FFFFFF;padding-left: 5px;padding-right: 5px;}
+.EventTitle .Box2 h3{padding-left: 5px;padding-right: 5px;}
+.Event .Box2 {color: #FFFFFF;}
+
+.Event .Box2 img{margin: 1px 20px 10px 0;border: 1px solid #006683;float: left;padding: 2px;}
+.SocialNetwork{height: 35px;width: 96%;border-bottom: 1px solid #006683;}
+.SocialNetwork ul{float: right;}
+.SocialNetwork ul li{display: inline;margin-right: 10px;}
+
+/*todos sigles evento*/
+
+#Content .SeachEvent .Box2{width: 96%;margin-top: 20px;overflow: hidden;padding-bottom: 25px;}
+
+.Event .Box1{font-family: "abelregular";overflow: hidden;}
+.Column{clear: both;font-family: "abelregular";overflow: hidden;}
+.Column .Pillar01 a:hover{border-bottom: 2px solid #006683;padding: 5px 0 3px}
+.Column .Pillar02 a:hover{border-bottom: 2px solid #006683;padding: 5px 0 3px}
+.Pillar01 ul li{overflow: hidden;}
+.Pillar01{float: left;}
+.Pillar01 a{padding: 5px 0;display: inline-block;text-decoration: none;color:#006683;}
+.Pillar02 a{padding: 5px 0;display: inline-block;text-decoration: none;color:#006683;}
+.Pillar02{float: right;margin-right: 10px;}
+.Years{clear: both;margin-top: 10px;overflow: hidden;font-family: "nothing_you_could_doregular";font-size: 12px;}
+.Year{float: right;margin-right: 10px;}
+.PreviousYear{float: right;}
+.Years a{color:#006683;padding: 5px;text-decoration: none;}
+
+/* banner destaque evento */
+
+#slideshow2 { background-color: #EEEEEE;border: 1px solid #DDDDDD;height: 290px;width: 370px;position: relative;}
+#slideshow2 img { height: 290px;width: 370px;left: 0;top: 0;position:absolute;z-index:8;}
+.nav { margin: 5px 0;float: right;}
